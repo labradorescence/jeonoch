@@ -11,6 +11,31 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'price',
+      title: 'Price',
+      type: 'string',
+    }),
+    defineField({
+      name: 'size',
+      title: 'Size',
+      type: 'string',
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
+    }),
+    defineField({
+      name: 'ingredients',
+      title: 'Ingredients',
+      type: 'string',
+    }),
+    defineField({
+      name: 'notes',
+      title: 'Notes',
+      type: 'blockContent',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -54,7 +79,6 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
       media: 'mainImage',
     },
     prepare(selection) {
